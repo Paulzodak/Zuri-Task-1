@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import profileImage from "./images/profile_img.svg";
+import LinkItem from "./components/LinkItem";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="image-container">
+        <img id={"profile_img"} src={profileImage} alt={"Profile_Picture"} />
+        <h1 id={"twitter"}>OjePaul</h1>
+        <h1 id={"slack"}> Oje Paul</h1>
+        <LinkItem />
+      </section>
     </div>
   );
 }

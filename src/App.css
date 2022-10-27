@@ -24,15 +24,14 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#profile_img {
+  /* margin: 3rem 0 0 0; */
+  height: 5rem;
+  width: 5rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-container {
+  margin: 4rem 0 0 0;
+}
+#slack {
+  /* display: none; */
 }
