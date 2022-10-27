@@ -1,0 +1,10 @@
+.link_container {
+  display: block;
+  background-color: #eaecf0;
+  padding: 1.5rem;
+  border: none;
+  width: 80%;
+  margin: 1rem 10%;
+  /* color: black; */
+  border-radius: 0.7rem;
+}
