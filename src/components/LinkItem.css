@@ -7,4 +7,9 @@
   margin: 1rem 10%;
   /* color: black; */
   border-radius: 0.7rem;
+  cursor: pointer;
+}
+.link_container:hover {
+  background-color: #d0d5dd;
+  transition: 0.7s;
 }
