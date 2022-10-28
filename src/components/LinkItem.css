@@ -13,3 +13,14 @@
   background-color: #d0d5dd;
   transition: 0.7s;
 }
+.link_container_mobile {
+  display: block;
+  background-color: #eaecf0;
+  padding: 1.5rem;
+  border: none;
+  width: 95%;
+  margin: 1rem 2.5%;
+  /* color: black; */
+  border-radius: 0.7rem;
+  cursor: pointer;
+}

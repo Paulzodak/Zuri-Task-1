@@ -11,7 +11,7 @@ function DesktopApp() {
   const links = [
     {
       Header: "Twitter Link",
-      Link: "",
+      Link: "https://twitter.com/OjePaul",
     },
     {
       Header: "Zuri Team",

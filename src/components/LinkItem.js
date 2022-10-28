@@ -1,7 +1,7 @@
 import React from "react";
 import "./LinkItem.css";
 
-const LinkItem = ({ item }) => {
+const LinkItem = ({ item, mobile }) => {
   return (
     <button
       // type="button"
@@ -9,7 +9,7 @@ const LinkItem = ({ item }) => {
         e.preventDefault();
         window.location.href = item.Link;
       }}
-      className="link_container"
+      className={mobile ? "link_container_mobile" : "link_container"}
     >
       {item.Header}
     </button>

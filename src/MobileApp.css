@@ -1,0 +1,51 @@
+.App {
+  font: inter;
+}
+
+#profile_img {
+  /* margin: 3rem 0 0 0; */
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+}
+.image-container {
+  margin: 4rem 0 0 0;
+  text-align: center;
+}
+#slack {
+  display: none;
+}
+#footer_mobile {
+  margin: 0 2.5%;
+  margin-bottom: 3rem;
+}
+#footer_mobile > * {
+  margin: 1rem 0;
+}
+.zuri {
+}
+.hng {
+  /* border: 1px solid red; */
+  /* margin-left: -3rem; */
+  color: #667085;
+}
+.ingressive {
+}
+.hr {
+  margin: 8rem 6rem 3rem 6rem;
+  border: 1px solid #eaecf0;
+}
+#socials {
+  text-align: center;
+  margin-top: 2rem;
+}
+#socials > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
+}
+.link {
+  position: absolute;
+  top: 5rem;
+  right: 20%;
+}
