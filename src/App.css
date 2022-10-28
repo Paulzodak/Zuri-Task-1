@@ -1,27 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font: inter;
 }
 
 #profile_img {
@@ -31,7 +9,41 @@
 }
 .image-container {
   margin: 4rem 0 0 0;
+  text-align: center;
 }
 #slack {
   /* display: none; */
+}
+#footer {
+  display: flex;
+  margin-bottom: 4rem;
+  /* grid-template-columns: 5rem 15rem auto 15rem auto 10rem auto; */
+  flex-direction: row;
+  justify-content: space-around;
+}
+.zuri {
+  /* height: 10rem;
+  width: 10rem; */
+  /* border: 1px solid red; */
+}
+.hng {
+  /* border: 1px solid red; */
+  /* margin-left: -3rem; */
+  color: #667085;
+}
+.ingressive {
+  /* border: 1px solid red; */
+}
+.hr {
+  margin: 8rem 6rem 3rem 6rem;
+  border: 1px solid #eaecf0;
+}
+#socials {
+  text-align: center;
+  margin-top: 2rem;
+}
+#socials > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
 }
