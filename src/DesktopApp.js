@@ -44,7 +44,7 @@ function DesktopApp() {
       <section className="image-container">
         <img id={"profile_img"} src={profileImage} alt={"Profile_Picture"} />
         <h1 id={"twitter"}>OjePaul</h1>
-        <h1 id={"slack"}> Oje Paul</h1>
+        <h1 id={"slack"}>Paul</h1>
         <img src={linkDesktop} alt={"link_icon"} className="link" />
       </section>
 

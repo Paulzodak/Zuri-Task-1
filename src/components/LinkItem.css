@@ -8,10 +8,12 @@
   /* color: black; */
   border-radius: 0.7rem;
   cursor: pointer;
+  color: black;
 }
 .link_container:hover {
   background-color: #d0d5dd;
   transition: 0.7s;
+  color: black;
 }
 .link_container_mobile {
   display: block;
@@ -23,4 +25,5 @@
   /* color: black; */
   border-radius: 0.7rem;
   cursor: pointer;
+  color: black;
 }
