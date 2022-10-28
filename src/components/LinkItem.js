@@ -4,7 +4,6 @@ import "./LinkItem.css";
 const LinkItem = ({ item, mobile }) => {
   return (
     <button
-      // type="button"
       onClick={(e) => {
         e.preventDefault();
         window.location.href = item.Link;
