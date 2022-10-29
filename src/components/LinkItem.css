@@ -1,14 +1,22 @@
 .link_container {
   display: block;
   background-color: #eaecf0;
-  padding: 1.5rem;
+  padding: 1.3rem;
   border: none;
   width: 80%;
   margin: 1rem 10%;
   /* color: black; */
   border-radius: 0.7rem;
   cursor: pointer;
+
   color: black;
+}
+button {
+  font-size: 1.5rem;
+}
+sub {
+  font-size: 0.8rem;
+  font-style: italic;
 }
 .link_container:hover {
   background-color: #d0d5dd;
@@ -18,7 +26,7 @@
 .link_container_mobile {
   display: block;
   background-color: #eaecf0;
-  padding: 1.5rem;
+  padding: 1.3rem;
   border: none;
   width: 95%;
   margin: 1rem 2.5%;

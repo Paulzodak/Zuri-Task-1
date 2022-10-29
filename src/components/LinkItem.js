@@ -11,6 +11,9 @@ const LinkItem = ({ item, mobile }) => {
       className={mobile ? "link_container_mobile" : "link_container"}
     >
       {item.Header}
+      <center>
+        <sub>{item.desc}</sub>
+      </center>
     </button>
   );
 };
