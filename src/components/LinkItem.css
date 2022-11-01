@@ -4,20 +4,14 @@
   padding: 1.3rem;
   border: none;
   width: 80%;
-  margin: 1rem 10%;
-  /* color: black; */
+  margin: 1rem 8%;
   border-radius: 0.7rem;
+  text-decoration: none;
   cursor: pointer;
-
+  text-align: center;
   color: black;
 }
-button {
-  font-size: 1.5rem;
-}
-sub {
-  font-size: 0.8rem;
-  font-style: italic;
-}
+
 .link_container:hover {
   background-color: #d0d5dd;
   transition: 0.7s;
@@ -28,8 +22,10 @@ sub {
   background-color: #eaecf0;
   padding: 1.3rem;
   border: none;
-  width: 95%;
-  margin: 1rem 2.5%;
+  width: 85%;
+  margin: 1rem 4%;
+  text-align: center;
+  text-decoration: none;
   /* color: black; */
   border-radius: 0.7rem;
   cursor: pointer;

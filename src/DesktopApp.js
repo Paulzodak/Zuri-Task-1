@@ -46,7 +46,7 @@ function DesktopApp() {
   return (
     <div className="App">
       <section className="image-container">
-        <img id={"profile_img"} src={profileImage} alt={"Profile_Picture"} />
+        <img id={"profile__img"} src={profileImage} alt={"Profile_Picture"} />
         <h1 id={"twitter"}>OjePaul</h1>
         <h1 id={"slack"}>Paul</h1>
         <img src={linkDesktop} alt={"link_icon"} className="link" />

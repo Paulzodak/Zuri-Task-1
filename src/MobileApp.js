@@ -17,7 +17,7 @@ const MobileApp = () => {
     {
       Header: "Zuri Team",
       Link: "https://training.zuri.team/",
-      ID: "btn_zuri",
+      ID: "btn__zuri",
     },
     {
       Header: "Zuri Books",
@@ -29,7 +29,7 @@ const MobileApp = () => {
       Header: "Python Books",
       Link: "https://books.zuri.team",
       desc: "Wanna learn a high-demand skill? This is for you!",
-      ID: "book_python",
+      ID: "book__python",
     },
     {
       Header: "Background Check for Coders",
@@ -41,13 +41,13 @@ const MobileApp = () => {
       Header: "Design Books",
       Link: "https://books.zuri.team/design-rules",
       desc: "Need more knowledge about design? Here's a free book to guide you!",
-      ID: "book_design",
+      ID: "book__design",
     },
   ];
   return (
     <div className="App">
       <section className="image-container">
-        <img id={"profile_img"} src={profileImage} alt={"Profile_Picture"} />
+        <img id={"profile__img"} src={profileImage} alt={"Profile_Picture"} />
         <h1 id={"twitter"}>OjePaul</h1>
         <h1 id={"slack"}> Paul</h1>
         <img src={linkMobile} alt={"link_icon"} className="link" />
