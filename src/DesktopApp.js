@@ -16,7 +16,7 @@ function DesktopApp() {
     {
       Header: "Zuri Team",
       Link: "https://training.zuri.team/",
-      ID: "btn_zuri",
+      ID: "btn__zuri",
     },
     {
       Header: "Zuri Books",
@@ -28,7 +28,7 @@ function DesktopApp() {
       Header: "Python Books",
       Link: "https://books.zuri.team",
       desc: "Wanna learn a high-demand skill? This is for you!",
-      ID: "book_python",
+      ID: "book__python",
     },
     {
       Header: "Background Check for Coders",
@@ -40,7 +40,7 @@ function DesktopApp() {
       Header: "Design Books",
       Link: "https://books.zuri.team/design-rules",
       desc: "Need more knowledge about design? Here's a free book to guide you!",
-      ID: "book_design",
+      ID: "book__design",
     },
   ];
   return (
