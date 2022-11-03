@@ -9,12 +9,16 @@ import Footer from "../Footer";
 const Contact = ({ mobile }) => {
   return (
     <>
-      <form className={classes.form}>
+      <form className={mobile ? classes.form_mobile : classes.form}>
         <header className={classes.header}>Contact Me</header>
         <p className={classes.p}>
           Hi there, contact me to ask me about anything you have in mind.
         </p>
-        <div className={classes.input_container}>
+        <div
+          className={
+            mobile ? classes.input_container_mobile : classes.input_container
+          }
+        >
           <FirstName />
           <LastName />
         </div>
