@@ -2,7 +2,7 @@ import DesktopApp from "./DesktopApp";
 import { useMediaQuery } from "react-responsive";
 import MobileApp from "./MobileApp";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const mobile = useMediaQuery({
