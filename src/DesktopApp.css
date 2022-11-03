@@ -43,3 +43,6 @@
   top: 5rem;
   right: 20%;
 }
+.router_link {
+  text-decoration: none;
+}

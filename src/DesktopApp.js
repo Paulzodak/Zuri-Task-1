@@ -6,7 +6,7 @@ import Iicon from "./images/I4G.svg";
 import slack_logo from "./images/slack.svg";
 import github_logo from "./images/github.svg";
 import linkDesktop from "./images/linkDesktop.svg";
-
+import { Link } from "react-router-dom";
 function DesktopApp() {
   const links = [
     {
@@ -42,6 +42,12 @@ function DesktopApp() {
       desc: "Need more knowledge about design? Here's a free book to guide you!",
       ID: "book__design",
     },
+    {
+      Header: "Contact Me",
+      PageLink: "/contact",
+      desc: "Need more knowledge about design? Here's a free book to guide you!",
+      ID: "contact",
+    },
   ];
   return (
     <div className="App">
@@ -53,9 +59,15 @@ function DesktopApp() {
       </section>
 
       <section>
-        {links.map((item) => (
-          <LinkItem item={item} />
-        ))}
+        {links.map((item) =>
+          item.Link ? (
+            <LinkItem item={item} />
+          ) : (
+            <Link className="router_link" to="/contact">
+              <LinkItem item={item} />
+            </Link>
+          )
+        )}
       </section>
 
       <section id={"socials"}>
