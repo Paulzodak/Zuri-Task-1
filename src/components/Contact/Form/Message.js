@@ -5,6 +5,7 @@ const Message = () => {
     <label className={classes.label}>
       Message
       <textarea
+        id={"message"}
         type="textarea"
         placeholder="Send me a message and I'll reply you as soon as possible..."
         className={classes.Message}

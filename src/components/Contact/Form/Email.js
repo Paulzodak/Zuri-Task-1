@@ -5,7 +5,8 @@ const Email = () => {
     <label className={classes.label}>
       Email
       <input
-        type="text"
+        id={"email"}
+        type={"text"}
         placeholder="yourname@email.com"
         className={classes.Email}
       ></input>

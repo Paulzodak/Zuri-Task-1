@@ -40,6 +40,12 @@ p {
   margin: 2rem 0 0 0;
   cursor: pointer;
 }
+.submit:hover {
+  background-color: #175cd3;
+}
+.submit :focus {
+  background: #1570ef;
+}
 .hr {
   margin: 6rem 6rem 3rem 6rem;
   border: 1px solid #eaecf0;

@@ -6,6 +6,7 @@ const FirstName = () => {
     <label className={classes.label}>
       First name
       <input
+        id={"first_name"}
         type="text"
         placeholder="Enter your first name"
         className={classes.first_name}

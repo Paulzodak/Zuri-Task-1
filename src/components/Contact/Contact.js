@@ -30,7 +30,9 @@ const Contact = ({ mobile }) => {
           &nbsp; You agree to providing your data to who may contact you.
         </label>
 
-        <button className={classes.submit}>Send message</button>
+        <button id={"btn__submit"} className={classes.submit}>
+          Send message
+        </button>
       </form>
       <hr className={mobile ? classes.hr_mobile : classes.hr} />
       <Footer mobile={mobile} />
