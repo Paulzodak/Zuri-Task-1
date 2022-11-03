@@ -5,7 +5,8 @@ import LastName from "./Form/LastName";
 import Email from "./Form/Email";
 import Message from "./Form/Message";
 import { Checkbox } from "semantic-ui-react";
-const Contact = () => {
+import Footer from "../Footer";
+const Contact = ({ mobile }) => {
   return (
     <>
       <form className={classes.form}>
@@ -24,8 +25,11 @@ const Contact = () => {
           <span classname={classes.checkmark}></span>
           &nbsp; You agree to providing your data to who may contact you.
         </label>
+
         <button className={classes.submit}>Send message</button>
       </form>
+      <hr className={mobile ? classes.hr_mobile : classes.hr} />
+      <Footer mobile={mobile} />
     </>
   );
 };

@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact mobile={mobile} />} />
         <Route
           path="/"
           element={

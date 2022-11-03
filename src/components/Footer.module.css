@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  margin-bottom: 4rem;
+  grid-template-columns: 5rem 15rem auto 15rem auto 10rem auto;
+  margin-top: 3rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hng {
+  color: #667085;
+}
+
+/* MOBILE */
+.footer_mobile {
+  margin: 0 2.5%;
+  margin-bottom: 3rem;
+}
+.footer_mobile > * {
+  margin: 1rem 0;
+}

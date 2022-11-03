@@ -1,6 +1,6 @@
 .form {
   /* border: 1px solid red; */
-  margin: 4rem 15rem 0 15rem;
+  margin: 4rem 15rem 15rem 15rem;
 }
 .header {
   font-size: 2rem;
@@ -28,4 +28,12 @@ p {
   height: 3rem;
   margin: 2rem 0 0 0;
   cursor: pointer;
+}
+.hr {
+  margin: 8rem 6rem 3rem 6rem;
+  border: 1px solid #eaecf0;
+}
+.hr_mobile {
+  margin: 8rem 3rem 3rem 3rem;
+  border: 1px solid #eaecf0;
 }
