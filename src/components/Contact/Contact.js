@@ -4,7 +4,6 @@ import FirstName from "./Form/FirstName";
 import LastName from "./Form/LastName";
 import Email from "./Form/Email";
 import Message from "./Form/Message";
-import { Checkbox } from "semantic-ui-react";
 import Footer from "../Footer";
 const Contact = ({ mobile }) => {
   return (
