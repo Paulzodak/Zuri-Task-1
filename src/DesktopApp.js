@@ -7,6 +7,7 @@ import slack_logo from "./images/slack.svg";
 import github_logo from "./images/github.svg";
 import linkDesktop from "./images/linkDesktop.svg";
 import { Link } from "react-router-dom";
+import Footer from "./components/Footer";
 function DesktopApp({ links }) {
   return (
     <div className="App">

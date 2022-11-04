@@ -40,3 +40,9 @@
 .router_link {
   text-decoration: none;
 }
+#footer {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
