@@ -5,14 +5,16 @@
   width: 100%;
   height: 2.5rem;
   border-radius: 0.4rem;
-  border: 2px solid #d0d5dd;
+  border: 1px solid #d0d5dd;
   margin: 0.5rem 0 2rem 0;
   box-shadow: 2px 2px 1px rgb(241, 241, 241);
 }
 .label {
   color: #344054;
   font-weight: bolder;
+  position: relative;
 }
+
 .first_name,
 .last_name,
 .Email,
@@ -23,9 +25,32 @@
   padding: 0 0.3rem;
 }
 
+input[type="text"]:focus {
+  border: 1px solid #84caff;
+  outline: none;
+}
+.Message:focus {
+  border: 4px solid #84caff67;
+}
 /* REDEFINING STYLES FOR MESSAGE */
 .Message {
+  outline: none;
   height: 9rem;
   padding: 0.5rem;
   font-family: "Inter", sans-serif;
+}
+.error_message {
+  position: relative;
+  top: -1.5rem;
+  color: #f83f23;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+.error {
+  border: 1px solid#f83f23;
+}
+.error_message_message {
+  outline: none;
+  border: 4px solid #f896878d;
+  border-radius: 0.7rem;
 }

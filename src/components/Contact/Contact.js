@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Contact.module.css";
 import FirstName from "./Form/FirstName";
 import LastName from "./Form/LastName";
@@ -6,6 +6,13 @@ import Email from "./Form/Email";
 import Message from "./Form/Message";
 import Footer from "../Footer";
 const Contact = ({ mobile }) => {
+  const [formIsValid, setFormIsValid] = useState({
+    first_name: false,
+    last_name: false,
+    email: false,
+    message: false,
+  });
+  console.log(formIsValid);
   return (
     <>
       <form className={mobile ? classes.form_mobile : classes.form}>
@@ -18,18 +25,32 @@ const Contact = ({ mobile }) => {
             mobile ? classes.input_container_mobile : classes.input_container
           }
         >
-          <FirstName />
-          <LastName />
+          <FirstName
+            formIsValid={formIsValid}
+            setFormIsValid={setFormIsValid}
+          />
+          <LastName formIsValid={formIsValid} setFormIsValid={setFormIsValid} />
         </div>
-        <Email />
-        <Message />
-        <label className={classes.agreement} for="agreement">
+        <Email formIsValid={formIsValid} setFormIsValid={setFormIsValid} />
+        <Message formIsValid={formIsValid} setFormIsValid={setFormIsValid} />
+        <label className={classes.agreement}>
           <input type="checkbox" className={classes.checkbox} />
-          <span classname={classes.checkmark}></span>
+          <span className={classes.checkmark}></span>
           &nbsp; You agree to providing your data to who may contact you.
         </label>
 
-        <button id={"btn__submit"} className={classes.submit}>
+        <button
+          type={"button"}
+          id={"btn__submit"}
+          className={`${classes.submit} ${
+            !formIsValid.first_name ||
+            !formIsValid.last_name ||
+            !formIsValid.email ||
+            !formIsValid.message
+              ? classes.btn_error
+              : classes.btn
+          }`}
+        >
           Send message
         </button>
       </form>
@@ -38,5 +59,4 @@ const Contact = ({ mobile }) => {
     </>
   );
 };
-
 export default Contact;
