@@ -1,5 +1,8 @@
 .App {
-  font: inter;
+  font-family: "Inter", sans-serif;
+}
+body {
+  padding: 1rem;
 }
 
 #profile__img {
@@ -15,18 +18,12 @@
 #slack {
   display: none;
 }
-#footer_mobile {
-  margin: 0 2.5%;
-  margin-bottom: 3rem;
-}
-#footer_mobile > * {
-  margin: 1rem 0;
-}
+
 .hng {
   color: #667085;
 }
 .hr {
-  margin: 8rem 2rem 3rem 2rem;
+  margin: 8rem 6rem 3rem 6rem;
   border: 1px solid #eaecf0;
 }
 #socials {
@@ -42,4 +39,13 @@
   position: absolute;
   top: 5rem;
   right: 20%;
+}
+.router_link {
+  text-decoration: none;
+}
+#footer {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
 }

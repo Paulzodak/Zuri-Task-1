@@ -44,7 +44,7 @@ p {
   background-color: #175cd3;
 }
 .submit:focus {
-  background: #1570ef;
+  /* background: #1570ef; */
   border: 1px solid #1570ef;
 }
 .hr {
@@ -56,5 +56,11 @@ p {
   border: 1px solid #eaecf0;
 }
 .btn_error {
+  background-color: #b2ddff;
+}
+.btn_error:hover {
+  background-color: #b2ddff;
+}
+.btn_error :visited {
   background-color: #b2ddff;
 }

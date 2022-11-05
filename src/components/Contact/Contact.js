@@ -11,7 +11,15 @@ const Contact = ({ mobile }) => {
     last_name: false,
     email: false,
     message: false,
+    checked: false,
   });
+  const checkHandler = (e) => {
+    console.log(e.target.checked);
+    setFormIsValid({
+      ...formIsValid,
+      checked: e.target.checked,
+    });
+  };
   console.log(formIsValid);
   return (
     <>
@@ -33,8 +41,13 @@ const Contact = ({ mobile }) => {
         </div>
         <Email formIsValid={formIsValid} setFormIsValid={setFormIsValid} />
         <Message formIsValid={formIsValid} setFormIsValid={setFormIsValid} />
-        <label className={classes.agreement}>
-          <input type="checkbox" className={classes.checkbox} />
+        <label htmlFor="checkbox" className={classes.agreement}>
+          <input
+            name="checkbox"
+            onClick={checkHandler}
+            type="checkbox"
+            className={classes.checkbox}
+          />
           <span className={classes.checkmark}></span>
           &nbsp; You agree to providing your data to who may contact you.
         </label>
@@ -46,7 +59,8 @@ const Contact = ({ mobile }) => {
             !formIsValid.first_name ||
             !formIsValid.last_name ||
             !formIsValid.email ||
-            !formIsValid.message
+            !formIsValid.message ||
+            !formIsValid.checked
               ? classes.btn_error
               : classes.btn
           }`}

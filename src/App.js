@@ -1,6 +1,5 @@
-import DesktopApp from "./DesktopApp";
+import HomePage from "./HomePage";
 import { useMediaQuery } from "react-responsive";
-import MobileApp from "./MobileApp";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Contact from "./components/Contact/Contact";
 
@@ -54,12 +53,7 @@ function App() {
     <>
       <Routes>
         <Route path="/contact" element={<Contact mobile={mobile} />} />
-        <Route
-          path="/"
-          element={
-            mobile ? <MobileApp links={links} /> : <DesktopApp links={links} />
-          }
-        />
+        <Route path="/" element={<HomePage mobile={mobile} links={links} />} />
       </Routes>
     </>
   );

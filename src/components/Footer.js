@@ -10,7 +10,7 @@ const Footer = ({ mobile }) => {
     <>
       <footer
         className={mobile ? classes.footer_mobile : classes.footer}
-        id="footer"
+        // id="footer"
       >
         <img className="zuri" src={zuriIcon} alt={"zuriIcon"}></img>
         <div className="hng"> HNG Internship 9 Frontend Task</div>

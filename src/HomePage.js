@@ -1,26 +1,26 @@
-import React from "react";
-import "./MobileApp.css";
+import "./HomePage.css";
 import profileImage from "./images/my_profile_img.jpg";
 import LinkItem from "./components/LinkItem";
 import zuriIcon from "./images/zuri.svg";
 import Iicon from "./images/I4G.svg";
 import slack_logo from "./images/slack.svg";
 import github_logo from "./images/github.svg";
-import linkMobile from "./images/linkMobile.svg";
-
-const MobileApp = ({ links }) => {
+import linkDesktop from "./images/linkDesktop.svg";
+import { Link } from "react-router-dom";
+import Footer from "./components/Footer";
+function HomePage({ mobile, links }) {
   return (
     <div className="App">
       <section className="image-container">
         <img id={"profile__img"} src={profileImage} alt={"Profile_Picture"} />
         <h1 id={"twitter"}>OjePaul</h1>
-        <h1 id={"slack"}> Paul</h1>
-        <img src={linkMobile} alt={"link_icon"} className="link" />
+        <h1 id={"slack"}>Paul</h1>
+        <img src={linkDesktop} alt={"link_icon"} className="link" />
       </section>
 
       <section>
         {links.map((item) => (
-          <LinkItem mobile item={item} />
+          <LinkItem mobile={mobile} item={item} />
         ))}
       </section>
 
@@ -29,13 +29,9 @@ const MobileApp = ({ links }) => {
         <img className="logo" src={github_logo} alt={"github_logo"}></img>
       </section>
       <hr className="hr" />
-      <footer id="footer_mobile">
-        <img className="zuri" src={zuriIcon} alt={"zuriIcon"}></img>
-        <div className="hng"> HNG Internship 9 Frontend Task</div>
-        <img className="ingressive" src={Iicon} alt={"14Gicon"}></img>
-      </footer>
+      <Footer mobile={mobile} />
     </div>
   );
-};
+}
 
-export default MobileApp;
+export default HomePage;
